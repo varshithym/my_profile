@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio website of Shreyas Kr" />
+  <title>Shreyas Kr | Portfolio</title>
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Shreyas Kr</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="subtitle">MERN Stack Developer • Core Java</p>
+        <h1>Hi, I'm <span>Shreyas Kr</span></h1>
+        <p class="hero-text">
+          I build clean, responsive, and modern websites using HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Core Java.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="shreyas img.jpeg" alt="Shreyas Kr profile photo" />
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-title">
+        <p>About Me</p>
+        <h2>Who I Am</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a passionate developer focused on creating user-friendly and visually appealing digital experiences.
+            I enjoy building projects that are clean, responsive, and easy to maintain.
+          </p>
+          <p>
+            I have worked on MERN stack and backend projects, and I continue improving my skills through real projects and practice.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>Quick Info</h3>
+          <ul>
+            <li><strong>Name:</strong> Shreyas Kr</li>
+            <li><strong>Location:</strong> Mysore, Karnataka, India</li>
+            <li><strong>Role:</strong> MERN Stack Developer</li>
+            <li><strong>Focus:</strong> HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Core Java</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-title">
+        <p>What I Know</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid" id="skillsContainer"></div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="section-title">
+        <p>My Background</p>
+        <h2>Education</h2>
+      </div>
+      <div class="education-grid" id="educationContainer"></div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-title">
+        <p>My Work</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-controls">
+        <input type="text" id="projectSearch" placeholder="Search projects..." />
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mern">MERN</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsContainer"></div>
+    </section>
+
+    <section class="stats section">
+      <div class="section-title">
+        <p>Highlights</p>
+        <h2>Developer Stats</h2>
+      </div>
+      <div class="stats-grid" id="statsContainer"></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-title">
+        <p>Get In Touch</p>
+        <h2>Contact Me</h2>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Shreyas Kr. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data/skills.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/experienceAndEducation.js"></script>
+  <script src="js/features/theme-toggle.js"></script>
+  <script src="js/features/skills-render.js"></script>
+  <script src="js/features/project-render.js"></script>
+  <script src="js/features/project-search.js"></script>
+  <script src="js/features/project-filter.js"></script>
+  <script src="js/features/modal.js"></script>
+  <script src="js/features/contact-validation.js"></script>
+  <script src="js/features/developer-stats.js"></script>
+  <script src="js/features/educationrender.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
