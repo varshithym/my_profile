@@ -21,6 +21,6 @@ const projectsData = [
     description: "A CLI version of a BookMyShow clone built using Node.js, Express.js, and MongoDB for booking logic and database operations.",
     technologies: ["Node.js", "Express.js", "MongoDB"],
     demoLink: "#",
-    githubLink: "#"
+    githubLink: "https://github.com/varshithym/MERN_Stu_FebMay26Mys/tree/main/Projects/Guided%20Project/BookMyShowClone/MERN%20Week%203_4_GuidProject_V1_ExpressMongo/backend"
   }
 ];
