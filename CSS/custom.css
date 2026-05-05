@@ -193,6 +193,7 @@ body.dark .header {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  align-items: center;
 }
 
 .btn {
@@ -611,4 +612,67 @@ body.dark .header {
     flex-direction: column;
     align-items: stretch;
   }
+}
+.hero-icons {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+}
+
+.hero-icons a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f1f5f9; /* light background */
+  
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ICON SIZE */
+.hero-icons a i {
+  font-size: 22px;
+}
+
+/* COLORS */
+.hero-icons a:nth-child(1) i {
+  color: #25D366; /* WhatsApp */
+}
+
+.hero-icons a:nth-child(2) i {
+  color: #333; /* GitHub */
+}
+
+.hero-icons a:nth-child(3) i {
+  color: #EA4335; /* Gmail */
+}
+
+/* HOVER EFFECT */
+.hero-icons a:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #e2e8f0;
+}
+.nav-resume {
+  font-weight: 600;
+  color: #3b82f6;
+  position: relative;
+}
+
+.nav-resume::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #3b82f6;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.nav-resume:hover::after {
+  width: 100%;
 }

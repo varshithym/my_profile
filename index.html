@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio website of Shreyas Kr" />
-  <title>Shreyas Kr | Portfolio</title>
+  <meta name="description" content="Professional portfolio website of Varshith Y M" />
+  <title>Varshith Y M | Portfolio</title>
   <link rel="stylesheet" href="css/custom.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+
   <header class="header">
     <nav class="navbar">
-      <a href="#home" class="logo">Shreyas Kr</a>
+      <a href="#home" class="logo">Varshith Y M</a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
 
@@ -24,6 +25,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <a href="resume.pdf" target="_blank" class="nav-resume" >View Resume</a>
       </ul>
 
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
@@ -34,17 +36,34 @@
     <section class="hero section" id="home">
       <div class="hero-content">
         <p class="subtitle">MERN Stack Developer • Core Java</p>
-        <h1>Hi, I'm <span>Shreyas Kr</span></h1>
+        <h1>Hi, I'm <span>Varshith Y M</span></h1>
         <p class="hero-text">
           I build clean, responsive, and modern websites using HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Core Java.
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn primary-btn">View Projects</a>
           <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          
+          <a href="resume.pdf" download class="btn primary-btn">Download Resume</a>
+
         </div>
+      <div class="hero-icons">
+        <a href="https://wa.me/917483339199" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      
+        <a href="https://github.com/varshithym" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ymvarshith@gmail.com" target="_blank" class="icon-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
       </div>
       <div class="hero-image">
-        <img src="shreyas img.jpeg" alt="Shreyas Kr profile photo" />
+        <img src="Varshith.PNG" alt="Varshith Y M profile photo" />
       </div>
     </section>
 
@@ -68,7 +87,7 @@
         <div class="about-box">
           <h3>Quick Info</h3>
           <ul>
-            <li><strong>Name:</strong> Shreyas Kr</li>
+            <li><strong>Name:</strong> Varshith Y M</li>
             <li><strong>Location:</strong> Mysore, Karnataka, India</li>
             <li><strong>Role:</strong> MERN Stack Developer</li>
             <li><strong>Focus:</strong> HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Core Java</li>
@@ -126,21 +145,30 @@
         <h2>Contact Me</h2>
       </div>
 
-      <form class="contact-form" id="contactForm">
+      <form  class="contact-form" id="contactForm" action="https://formspree.io/f/xojreoqj"
+        method="POST" novalidate>
+      
         <div class="form-row">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+      
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
         </div>
-        <input type="text" id="subject" placeholder="Subject" required />
-        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary-btn">Send Message</button>
+      
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+      
+        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+      
+        <button type="submit" class="btn primary-btn">
+          Send Message
+        </button>
+      
         <p class="form-message" id="formMessage"></p>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Shreyas Kr. All rights reserved.</p>
+    
   </footer>
 
   <div class="modal" id="projectModal">

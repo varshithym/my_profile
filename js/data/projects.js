@@ -13,7 +13,7 @@ const projectsData = [
     description: "A CLI version of a LinkedIn clone built using Node.js, Express.js, and MongoDB to practice backend flow, routing, and data handling.",
     technologies: ["Node.js", "Express.js", "MongoDB"],
     demoLink: "#",
-    githubLink: "#"
+    githubLink: "https://github.com/varshithym/MERN_Stu_FebMay26Mys/tree/main/Team%20Project/LinkedIn%20Clone/MERN_Week%20_V1"
   },
   {
     title: "BookMyShow Clone",

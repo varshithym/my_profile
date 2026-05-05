@@ -12,18 +12,18 @@ const educationData = [
     title: "B.E.",
     institution: "Cauvery Institute of Technology, Mandya, VTU",
     duration: "2022 - 2026",
-    description: "CGPA: 8.6"
+    description: "CGPA: 8.2"
   },
   {
     title: "PUC",
-    institution: "Sadvidya PU College, Mysore",
+    institution: "Shree Krishna PU College, Bengaluru",
     duration: "2019 - 2022",
-    description: "78%"
+    description: "73%"
   },
   {
     title: "SSLC",
-    institution: "St. Mary's Convent School, Mandya",
+    institution: "Sri Ramakrishna vidyashala, Mysore",
     duration: "2019",
-    description: "84%"
+    description: "80%"
   }
 ];
